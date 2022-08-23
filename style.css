@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html,
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color:#fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  z-index: 1;
+}
+p{
+  margin: 0;
+}
+h3{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #000;
+  color:#fff;
+  z-index: 1;
+  margin:0;
+}
+div{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* 
+ * Method 1 
+ */
+.absolute{
+  background: #2f4858;
+}
+.absolute p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 
+ * Method 2 
+ */
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6ae2d;
+}
+/* 
+ * Method 3 
+ */
+.grid{
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+/* 
+ * Method 4 
+ */
+.grid-margin {
+  display: grid;
+  background: #2f4858;
+}
+.grid-margin p {
+  margin: auto;
+}
+/* 
+ * Method 5 
+ */
+.tabel{
+  background: #f6ae2d;
+  display: table;
+}
+.tabel p{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
